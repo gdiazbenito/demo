@@ -6,9 +6,9 @@ from dotenv import load_dotenv
 import os
 import streamlit as st
 
-load_dotenv()
-#openai_nvapi_key = st.secrets["OPENAI_NVAPI_KEY"]
-openai_nvapi_key = os.getenv("OPENAI_NVAPI_KEY")
+#load_dotenv()
+openai_nvapi_key = st.secrets["OPENAI_NVAPI_KEY"]
+#openai_nvapi_key = os.getenv("OPENAI_NVAPI_KEY")
 
 ## Construct the system prompt
 prompt_template = """
