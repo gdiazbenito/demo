@@ -1,0 +1,10 @@
+langchain-community
+langgraph
+pydantic
+langchain-core
+python-dotenv
+requests
+langchain-nvidia-ai-endpoints
+streamlit
+Pillow
+
