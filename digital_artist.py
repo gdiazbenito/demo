@@ -10,9 +10,11 @@ import base64
 import io
 import streamlit as st
 
-load_dotenv()
-openai_nvapi_key = os.getenv("OPENAI_NVAPI_KEY")
-stablediff_nvapi_key = os.getenv("STABLEDIFF_NVAPI_KEY")
+#load_dotenv()
+#openai_nvapi_key = os.getenv("OPENAI_NVAPI_KEY")
+#stablediff_nvapi_key = os.getenv("STABLEDIFF_NVAPI_KEY")
+openai_nvapi_key = st.secrets["OPENAI_NVAPI_KEY"]
+stablediff_nvapi_key = st.secrets["STABLEDIFF_NVAPI_KEY"]
 
 # re-writing the input promotion title in to appropriate image_gen prompt 
 def llm_rewrite_to_image_prompts(user_query: str) -> str:
